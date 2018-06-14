@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    .tab_header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 42px;
+        background-color: #888;
+        .header_loader{
+            line-height: 36px;
+            margin-left: 10px;
+        }
+        .header_btn{
+            position: absolute;
+            line-height: 36px;
+            right: 10px;
+            padding: 0 10px;
+            margin-top: 3px;
+            border-left: 1px solid #9aa;
+        }
+    }
+    .tab_content{
+        width: 100%;
+        .goods_item{
+            position: relative;
+            width: 100%;
+            height: 120px;
+            padding: 5px 0 5px 5px;
+            img{
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 30%;
+                height: 110px;
+            }
+            p{
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                left: 32%;
+                color: #000;
+            }
+            .item_price{
+                position: absolute;
+                display: inline-block;
+                bottom: 22px;
+                left: 32%;
+                color: red;
+                font-size: 18px;
+            }
+        }
+    }
+
+}

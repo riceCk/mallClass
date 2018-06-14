@@ -1,0 +1,108 @@
+@import './base.less';
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html, body{
+    width: 100%;
+    background: #f7f7f7;
+    font-family: 'microsoft yahei', arial, sans-serif;
+}
+.box{
+    width: 100%;
+    .tab_header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #888;
+        font-size: 14px;
+        z-index: 20;
+        .header_loader{
+            position: absolute;
+            left:10px;
+            top:10px;
+        }
+        .header_btn{
+            position: absolute;
+            line-height: 36px;
+            right: 10px;
+            padding: 0 10px;
+            margin-top: 3px;
+            border-left: 1px solid #9aa;
+        }
+    }
+    .goods_infor_wrap{
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        background: @gray-6;
+        z-index: 10;
+        .infor_wrap{
+            background: @white;
+        }
+        .infor_one{
+            .infor_one_img{
+                position: relative;
+                height: 270px;
+                width: 100%;
+                overflow: hidden;
+                background: #000;
+                img{
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    transform: translateY(-50%);
+                }
+            }
+            .one_wrap{
+                margin: 0 10px;
+                .one_price{
+                    color: @red;
+                    padding: 10px 0;
+                }
+            }
+        }
+        .infor_two{
+            p{
+                position: relative;
+                padding: 10px 0;
+                margin: 0 10px;
+                span{
+                    position: absolute;
+                    right: 10px;
+                }
+            }
+        }
+        .infor_th{
+            p{
+                margin: 10px 10px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .infor_fo{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: @red;
+            text-align: center;
+            padding: 10px 0;
+            a{
+                color: @white;
+                text-decoration: none;
+            }
+        }
+        
+    }
+}
+@white: #fff;
+@background: #efeff4;
+@black:#000;
+@gray-3:#333;
+@gray-6:#666;
+@gray-e0:#e0e0e0;
+@red: #d73940;
